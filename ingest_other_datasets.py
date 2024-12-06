@@ -18,7 +18,7 @@ logging.basicConfig(
     ]
 )
 
-db = duckdb.connect('data.duckdb')
+db = duckdb.connect('imdb.duckdb')
 
 def ingest_and_profile(directory, prefix):
 
@@ -46,8 +46,8 @@ def ingest_and_profile(directory, prefix):
             logging.debug(f"First chunk schema: {df.dtypes}")
             continue
 
-ingest_and_profile('movielens', 'ml')
-ingest_and_profile('movielens32m', 'ml32')
+ingest_and_profile('movielens', 'ml_')
+ingest_and_profile('movielens32m', 'ml32_')
 
 
 tmdb = pd.read_csv('TMDB_movie_dataset_v11.csv')
