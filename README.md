@@ -18,4 +18,5 @@ The notebook `webscraping.ipynb` is provided as an attempt to obtain box office 
 
 
 ## Movie Recommender on MovieLens dataset
-To follow
+I wrote the notebook `movie_recommender.ipynb` training a recommender on the MovieLens 20M dataset.
+I chose K-nearest neighbors and Non-negative Matrix Factorization.
